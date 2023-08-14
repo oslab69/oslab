@@ -18,7 +18,6 @@ producer();
 else
 printf("BUFFER IS FULL");
 break; 
-27 | P a g e
 case 2:
 if((mutex==1)&&(full!=0))
 consumer();
