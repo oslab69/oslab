@@ -75,13 +75,14 @@ void main()
       i++;
     }
   }
-  printf("\nPROCESS NAME\tCOMPLETION TIME (ms)\tWAITING TIME (ms)\tTURNAROUND TIME (ms)\n\n");
-  for(i=0;i<n;i++)
-  {
-    printf("    %s\t\t\t%d\t\t\t%d\t\t\t%d\n",p[i].name,p[i].ct,p[i].wt,p[i].tt);
-    twt+=p[i].wt;
-    ttt+=p[i].tt;
-  }
+  printf("\nPROCESS NAME\tARRIVAL TIME\tCOMPLETION TIME (ms)\tWAITING TIME (ms)\tTURNAROUND TIME (ms)\n\n");
+for(i=0;i<n;i++)
+{
+  printf("    %s\t\t\t%d\t\t\t%d\t\t\t%d\t\t\t%d\n",p[i].name,p[i].at,p[i].ct,p[i].wt,p[i].tt);
+  twt+=p[i].wt;
+  ttt+=p[i].tt;
+}
+
   printf("\n\nGANTT CHART ");
   printf("\n\t--------------------------------------------------------------------\n\t");
   for(i=0;i<num;i++)
